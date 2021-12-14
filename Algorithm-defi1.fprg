@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-14 06:20:19 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC1VMDdCNTk3OzIwMjEtMTItMTQ7IjA2OjAxOjUxICI7MzAzMw=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1VMDdCNTk3OzIwMjEtMTItMTQ7IjA2OjIwOjE5ICI7MTszMTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;entrer b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;apres:a=&quot;&amp;a&amp;&quot;;b=&quot;&amp;b" newline="True"/>
+            <assign variable="c" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="c"/>
+            <output expression="&quot;avant:a=&quot;&amp;a&amp;&quot;;b=&quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
