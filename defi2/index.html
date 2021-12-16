@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <script>
-            var isFound;
+        table = ["boutaina","reda","youssra","nada","hicham","maskoul"]
+        notFound = false
+        var userInput=  prompt("entre a name:")
 
-            isFound = false;
-            // var listNumbers = createArray(5);
-            var listNumbers = [1,10,4,9,87,9];
-
-            
-            var userInput;
-            var i;
-
-            userInput = window.prompt('Enter a value for userInput');
-            for (i = 0; i <= listNumbers.length; i++) {
-                if (userInput == listNumbers[i]) {
-                    isFound = true;
-                }
+        for (i=0;i <=table.length;i++){
+            if(userInput==table[i]){
+                notFound=true
             }
-            if (isFound) {
-                window.alert("Yes the number exists");
-            } else {
-                window.alert("Did not found the number");
-            }
-        
+        }
+        if(notFound){
+            alert("yes we have that name " +userInput)
+        }
+        else{
+            alert("no we dont have that name" +userInput)
+        }
     </script>
 </body>
-
 </html>
