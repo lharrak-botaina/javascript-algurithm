@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+            var isFound;
+
+            isFound = false;
+            // var listNumbers = createArray(5);
+            var listNumbers = [1,10,4,9,87,9];
+
+            
+            var userInput;
+            var i;
+
+            userInput = window.prompt('Enter a value for userInput');
+            for (i = 0; i <= listNumbers.length; i++) {
+                if (userInput == listNumbers[i]) {
+                    isFound = true;
+                }
+            }
+            if (isFound) {
+                window.alert("Yes the number exists");
+            } else {
+                window.alert("Did not found the number");
+            }
+        
+    </script>
+</body>
+
+</html>

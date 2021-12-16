@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        table = ["boutaina","reda","youssra","nada","hicham","maskoul"]
+        notFound = false
+        var userInput=  prompt("entre a name:")
+
+        for (i=0;i <=table.length;i++){
+            if(userInput==table[i]){
+                notFound=true
+            }
+        }
+        if(notFound){
+            alert("yes we have that name " +userInput)
+        }
+        else{
+            alert("no we dont have that name" +userInput)
+        }
+    </script>
+</body>
+</html>
